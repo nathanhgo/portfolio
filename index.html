@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nathan Guimarães — desenvolvedor de software em Jacareí</title>
+<meta name="description" content="Desenvolvedor de software em Jacareí, SP. Trabalho com processamento de imagens, automação e aplicações web e mobile: Go, Python, TypeScript, React e Flutter. Projetos, demonstrações e contato.">
+<meta name="robots" content="index, follow">
+<meta name="color-scheme" content="light">
+<!-- TROCAR: canonical e og:url quando o domínio existir -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nathan Guimarães — desenvolvedor de software">
+<meta property="og:description" content="Processamento de imagens, automação e aplicações web e mobile. Projetos, demonstrações para comércio local e contato.">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="./assets/base.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#inicio">Nathan Guimarães</a>
+    <nav aria-label="Seções da página">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#demonstracoes">Demonstrações</a>
+      <a href="#ferramentas">Ferramentas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <section class="hero wrap">
+    <p class="label">desenvolvedor de software</p>
+    <h1>Nathan Guimarães</h1>
+    <p class="lead">Construo software de ponta a ponta: processamento de imagens no backend em Go, interface em React ou aplicativo em Flutter. Último ano de Análise e Desenvolvimento de Sistemas no IFSP e estágio em desenvolvimento.</p>
+    <p class="local">Jacareí, SP · Brasil</p>
+    <p class="acoes">
+      <a class="btn" href="#projetos">Ver projetos</a>
+      <a class="btn btn--ghost" href="https://github.com/nathanhgo">GitHub</a>
+    </p>
+  </section>
+
+  <section id="sobre" class="section wrap">
+    <span class="num">01 · sobre</span>
+    <h2>O que eu faço</h2>
+    <p>Curso o último ano de Análise e Desenvolvimento de Sistemas no IFSP, em Jacareí, e trabalho como estagiário de desenvolvimento — lido com automação de coleta de dados e manutenção de um portal de vagas. Fora do estágio construo as minhas próprias ferramentas: um editor de imagens por nós, um site de jogos de tabuleiro para jogar com amigos por link e um aplicativo de fichas de RPG.</p>
+    <p>Me interessa software que decide, não só software que executa: visão computacional aplicada a imagens aéreas, automação de processo repetitivo e processamento digital de imagens. Por isso mesmo prefiro entender o problema inteiro antes de escolher a ferramenta — já escrevi backend em Go e Python, frontend em React e TypeScript, aplicativo em Flutter e um benchmark só para medir onde cada modelo de concorrência ganha.</p>
+    <ul class="fatos">
+      <li><span class="rot">formação</span>Tecnologia em Análise e Desenvolvimento de Sistemas, IFSP campus Jacareí — último ano</li>
+      <li><span class="rot">idiomas</span>Português nativo · inglês intermediário para leitura técnica e escrita</li>
+      <li><span class="rot">interesses</span>Sistemas autônomos, visão computacional, automação e processamento de imagens</li>
+      <li><span class="rot">também faço</span>Páginas para comércio de bairro — ver a seção de demonstrações</li>
+    </ul>
+  </section>
+
+  <section id="projetos" class="section wrap">
+    <span class="num">02 · projetos</span>
+    <h2>O que já construí</h2>
+    <ul class="projetos">
+
+      <li>
+        <h3>FotoFácil — editor de imagens por nós</h3>
+        <p class="desc">Processamento de imagens em lote a partir de um fluxo montado visualmente: em vez de repetir a mesma edição arquivo por arquivo, a pessoa liga os blocos de processamento num quadro e aplica tudo em uma pasta inteira de uma vez. Trabalho apresentado no WORCAP, congresso do INPE.</p>
+        <p class="meta">electron · react · typescript · go</p>
+        <p class="links"><a href="https://github.com/nathanhgo/foto-facil">Código no GitHub</a></p>
+      </li>
+
+      <li>
+        <h3>Fortuna — jogos de mesa para jogar por link</h3>
+        <p class="desc">Versões digitais de jogos de mesa clássicos (xadrez, Coup, batalha naval) em salas compartilháveis por link, sem cadastro e sem login: quem recebe o endereço entra e joga. O projeto existe porque reunir o grupo presencialmente é a parte difícil.</p>
+        <p class="meta">next.js · react · python</p>
+        <p class="links"><a href="https://github.com/nathanhgo/fortuna">Código no GitHub</a></p>
+      </li>
+
+      <li>
+        <h3>Ficha Digital RPG</h3>
+        <p class="desc">Aplicativo para fichas, sessões e inventário de um sistema de RPG próprio, baseado em D&amp;D 5e. O mestre e os jogadores enxergam a mesma ficha atualizada em tempo real durante a sessão, o que elimina a papelada na mesa.</p>
+        <p class="meta">flutter · dart · supabase</p>
+        <p class="links"><a href="https://github.com/nathanhgo/ficha-digital-rpg">Código no GitHub</a></p>
+      </li>
+
+      <li>
+        <h3>Benchmark de processamento de imagens</h3>
+        <p class="desc">Comparação medida entre modelos de concorrência no processamento de imagens em lote: threads e processos em Python contra goroutines em Go, com o efeito do GIL aparecendo nos números. Feito para provar a escolha de arquitetura em vez de repetir o senso comum.</p>
+        <p class="meta">python · go · opencv</p>
+        <p class="links"><a href="https://github.com/nathanhgo/image-processing-benchmark">Código no GitHub</a></p>
+      </li>
+
+      <li>
+        <h3>Semantic Skill Matcher</h3>
+        <p class="desc">Prova de conceito para o problema de vocabulário em recrutamento: quem escreve "programo em py" precisa ser encontrado pela vaga de "desenvolvedor Python". O projeto troca a busca por palavra-chave por casamento semântico entre currículo e vaga.</p>
+        <p class="meta">prova de conceito</p>
+        <p class="links"><a href="https://github.com/nathanhgo/semantic-skill-matcher">Código no GitHub</a></p>
+      </li>
+
+      <li>
+        <h3>Vagas — pipeline diário de candidaturas</h3>
+        <p class="desc">Rotina que roda todo dia: coleta vagas de estágio e júnior, filtra por perfil e localização, monta o resumo do dia, gera um currículo adaptado para cada vaga e registra as candidaturas em planilha. A coleta e o filtro são em Python puro, sem custo de modelo de linguagem.</p>
+        <p class="meta">python · automação · cron</p>
+        <p class="links"><span class="muted">Projeto pessoal, sem repositório público</span></p>
+      </li>
+
+      <li>
+        <h3>CriptoLab Web <span class="muted">(trabalho em grupo, faculdade)</span></h3>
+        <p class="desc">Sistema web com One Time Pad, Cifra de César, Vigenère e Cifra de Hill implementados do zero — sem nenhuma biblioteca de criptografia — mais um módulo de criptoanálise com força bruta sobre a César e demonstração do ataque por reutilização de chave em OTP.</p>
+        <p class="meta">javascript · html · css</p>
+        <p class="links"><a href="https://github.com/AliceBiju/CriptoLab_Web">Código no GitHub</a></p>
+      </li>
+
+    </ul>
+    <p class="label" style="margin-top:2rem">outros repositórios em <a href="https://github.com/nathanhgo?tab=repositories">github.com/nathanhgo</a></p>
+  </section>
+
+  <section id="demonstracoes" class="section wrap">
+    <span class="num">03 · demonstrações</span>
+    <h2>Páginas para comércio de bairro</h2>
+    <p>Faço páginas de uma tela para comércio local com o que resolve o dia a dia de quem atende no balcão: o negócio aparece para quem procura pelo bairro, preços e horário ficam escritos sem ninguém precisar perguntar, e o contato cai direto no WhatsApp com a mensagem já escrita.</p>
+    <!-- TROCAR: quando o repositório demos estiver publicado, transformar a frase abaixo em link
+         para o endereço real. NÃO inventar endereço enquanto ele não existir. -->
+    <p>Nenhuma delas é o site oficial de um negócio: são propostas feitas antes de qualquer contratação, e saem do ar quando o dono pede. <span class="muted">A lista de demonstrações está em construção — o endereço entra aqui assim que o primeiro lote de páginas estiver publicado.</span></p>
+  </section>
+
+  <section id="ferramentas" class="section wrap">
+    <span class="num">04 · ferramentas</span>
+    <h2>Com o que eu trabalho</h2>
+    <ul class="ferramentas">
+      <li>Python</li><li>Go</li><li>TypeScript</li><li>JavaScript</li><li>React</li><li>Next.js</li><li>Flutter</li><li>Dart</li><li>Electron</li><li>PostgreSQL</li><li>Supabase</li><li>Docker</li><li>Linux</li><li>Git</li>
+    </ul>
+  </section>
+
+  <section id="contato" class="section wrap">
+    <span class="num">05 · contato</span>
+    <h2>Falar comigo</h2>
+    <p>Escreva para <a href="mailto:nathanhguimaraes@gmail.com">nathanhguimaraes@gmail.com</a><button class="btn btn--ghost" type="button" hidden data-copiar-email="nathanhguimaraes@gmail.com">Copiar e-mail</button><span class="aviso-copia" data-copiar-aviso aria-live="polite"></span></p>
+    <p>Aberto a conversas sobre estágio ou posição júnior em desenvolvimento, e a projetos de página para comércio local.</p>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <p>Nathan Guimarães — Jacareí, SP</p>
+    <p>Página escrita à mão em HTML e CSS, sem framework e sem rastreamento. Última atualização: setembro de 2026.</p>
+  </div>
+</footer>
+
+<script src="./assets/main.js" defer></script>
+</body>
+</html>
