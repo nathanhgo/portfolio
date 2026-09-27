@@ -80,3 +80,22 @@ entusiasmo.
 A seção de demonstrações é escrita para o visitante de negócio local: explica em duas frases o que
 são aquelas páginas e manda para a lista. Ela existe antes de existir demo publicada — com a frase
 honesta de que a lista está em construção, e não com um cartão vazio fingindo conteúdo.
+
+
+## Carrossel (decidido com o cliente)
+Uma imagem por vez, ocupando a largura toda; setas circulares sobre a imagem (`‹`/`›`,
+`aria-label` traduzido); bolinhas centralizadas abaixo da imagem; **sem** botão "ampliar":
+clicar na imagem abre o modal (`img[data-zoom]`); a linha "as imagens passam sozinhas" saiu.
+Avança sozinho a cada 5 s quando o carrossel está na tela, para no hover/foco/toque e em
+`prefers-reduced-motion`. Sem JS continua sendo uma faixa rolável.
+Imagens sempre com `aspect-ratio` + `object-fit: cover` (nunca `height` fixo, que estica).
+
+## Tema e idioma
+`html[data-tema]` para claro/escuro (persistido em `localStorage`), `data-i18n`/`data-i18n-alt`/
+`data-i18n-aria` para os textos, com o português escrito no HTML (funciona sem JS).
+Rótulo de formulário que contém `<input>` precisa do texto num `<span data-i18n>`: trocar
+`textContent` do rótulo apagaria o campo.
+
+## Rede de segurança da animação de entrada
+`[data-anima]` começa em `opacity: 0`. Se o `IntersectionObserver` não disparar (aba oculta,
+navegador antigo), o texto fica invisível — por isso há um `setTimeout` de 1,5 s que revela tudo.

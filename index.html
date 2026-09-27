@@ -1,155 +1,319 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-tema="claro">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nathan Guimarães — desenvolvedor de software em Jacareí</title>
-<meta name="description" content="Desenvolvedor de software em Jacareí, SP. Trabalho com processamento de imagens, automação e aplicações web e mobile: Go, Python, TypeScript, React e Flutter. Projetos, demonstrações e contato.">
-<meta name="robots" content="index, follow">
-<meta name="color-scheme" content="light">
-<!-- TROCAR: canonical e og:url quando o domínio existir -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Nathan Guimarães — desenvolvedor de software">
-<meta property="og:description" content="Processamento de imagens, automação e aplicações web e mobile. Projetos, demonstrações para comércio local e contato.">
-<meta property="og:locale" content="pt_BR">
-<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="./assets/base.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.titulo">Nathan Guimarães | desenvolvedor de software em Jacareí</title>
+  <meta name="description" content="Desenvolvedor de software em Jacareí, SP. Páginas que trazem contato, automação de tarefas repetitivas e aplicações web e mobile com Go, Python, TypeScript, React e Flutter.">
+  <meta name="author" content="Nathan Guimarães">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#10382e">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Nathan Guimarães | desenvolvedor de software">
+  <meta property="og:description" content="Páginas que trazem contato, automação de tarefas repetitivas e aplicações web e mobile.">
+  <meta property="og:image" content="assets/projetos/fotofacil-ui.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/base.css">
+  <script src="assets/idiomas.js" defer></script>
+  <script src="assets/main.js" defer></script>
 </head>
 <body>
+  <header class="topo">
+    <div class="wrap">
+      <a class="marca" href="#topo">Nathan Guimarães</a>
+      <nav aria-label="Seções do site">
+        <a href="#sobre" data-i18n="nav.sobre">Sobre</a>
+        <a href="#projetos" data-i18n="nav.projetos">Projetos</a>
+        <a href="#paginas" data-i18n="nav.paginas">Páginas</a>
+        <a href="#ferramentas" data-i18n="nav.ferramentas">Ferramentas</a>
+        <a href="#contato" data-i18n="nav.contato">Contato</a>
+      </nav>
+      <div class="controles">
+        <button class="controle" type="button" data-tema-btn aria-pressed="false" data-i18n-aria="ctrl.tema.aria">
+          <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="4" fill="currentColor"/><g stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M3.9 3.9l1.4 1.4M14.7 14.7l1.4 1.4M14.7 5.3l1.4-1.4M3.9 16.1l1.4-1.4"/></g></svg><span data-tema-rot>claro</span>
+        </button>
+        <div class="controle idioma-grupo" role="group" aria-label="Idioma / Language" data-i18n-aria="ctrl.idioma.aria">
+          <button class="controle" type="button" data-idioma-btn="pt" aria-pressed="true" title="Português"><svg viewBox="0 0 20 14" aria-hidden="true" focusable="false"><rect width="20" height="14" fill="#009b3a"/><path d="M10 1.4 18.3 7 10 12.6 1.7 7Z" fill="#fedf00"/><circle cx="10" cy="7" r="3.1" fill="#002776"/><path d="M7.6 5.6c1.7-.6 3.6-.7 5.4-.2" stroke="#fff" stroke-width=".7" fill="none"/></svg><span>pt</span></button>
+          <button class="controle" type="button" data-idioma-btn="en" aria-pressed="false" title="English"><svg viewBox="0 0 20 14" aria-hidden="true" focusable="false"><rect width="20" height="14" fill="#fff"/><g fill="#b22234"><rect width="20" height="1.08" y="0"/><rect width="20" height="1.08" y="2.15"/><rect width="20" height="1.08" y="4.31"/><rect width="20" height="1.08" y="6.46"/><rect width="20" height="1.08" y="8.62"/><rect width="20" height="1.08" y="10.77"/><rect width="20" height="1.08" y="12.92"/></g><rect width="8.4" height="7.5" fill="#3c3b6e"/></svg><span>en</span></button>
+        </div>
+        <a class="btn" href="#orcamento" data-i18n="nav.cta">Contato</a>
+      </div>
+    </div>
+  </header>
 
-<header class="topo">
-  <div class="wrap">
-    <a class="marca" href="#inicio">Nathan Guimarães</a>
-    <nav aria-label="Seções da página">
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#demonstracoes">Demonstrações</a>
-      <a href="#ferramentas">Ferramentas</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </div>
-</header>
+  <main>
+    <section class="hero" id="topo">
+      <div class="wrap grid">
+        <div>
+          <p class="label" data-i18n="hero.rotulo">desenvolvedor de software</p>
+          <h1 data-anima>Nathan Guimarães</h1>
+          <p class="lead" data-anima data-i18n="hero.lead">Faço software para resolver problema de verdade: páginas que trazem contato, automações que devolvem tempo e aplicações que as pessoas usam todo dia. Sou de Jacareí, no interior de São Paulo, e estou no último ano de Análise e Desenvolvimento de Sistemas.</p>
+          <p data-anima data-i18n="hero.disponivel">Disponível para projetos freelancer e conversas sobre oportunidades de desenvolvimento.</p>
+          <div class="acoes" data-anima>
+            <a class="btn" href="#orcamento" data-i18n="hero.cta1">Entrar em contato</a>
+            <a class="btn btn--ghost" href="#projetos" data-i18n="hero.cta2">Ver projetos</a>
+          </div>
+          <p class="local">Jacareí · SP · Brasil</p>
+        </div>
+        <figure class="vitrine" data-anima>
+          <img data-zoom src="assets/projetos/fotofacil-ui.jpg" alt="Tela do editor de fluxo do FotoFácil, com a biblioteca de nós à esquerda" width="1000" height="640">
+          <figcaption data-i18n="hero.vitrine">FotoFácil: o editor de fluxo que eu construí</figcaption>
+        </figure>
+      </div>
+    </section>
 
-<main id="inicio">
+    <section class="section" id="sobre">
+      <div class="wrap">
+        <span class="num" data-i18n="sobre.num">01 · sobre</span>
+        <h2 data-anima data-i18n="sobre.titulo">Quem está do outro lado</h2>
+        <p data-anima data-i18n="sobre.p1">Curso o último ano de Análise e Desenvolvimento de Sistemas no IFSP, em Jacareí, e trabalho como estagiário de desenvolvimento em uma empresa de tecnologia de RH, onde cuido de automação de coleta de dados e de um portal usado em todo o Brasil. Fora do trabalho construo minhas próprias ferramentas: um editor de imagens por nós, jogos de tabuleiro para jogar com amigos por link e um aplicativo de fichas de RPG.</p>
+        <p data-anima data-i18n="sobre.p2">Me interessa software que resolve problema: visão computacional aplicada a imagens aéreas, automação de tarefas repetitivas e processamento digital de imagens. Também faço iniciação científica na área. Antes de escolher ferramenta eu quero entender o problema inteiro, e é por isso que já escrevi backend em Go e Python, frontend em React, aplicativo em Flutter e até um benchmark só para medir onde cada modelo de concorrência ganha.</p>
+        <ul class="fatos" data-anima>
+          <li><span class="rot" data-i18n="sobre.rot.formacao">formação</span><span data-i18n="sobre.val.formacao">Tecnologia em Análise e Desenvolvimento de Sistemas, IFSP campus Jacareí, último ano</span></li>
+          <li><span class="rot" data-i18n="sobre.rot.experiencia">experiência</span><span data-i18n="sobre.val.experiencia">Estágio em desenvolvimento no setor de tecnologia de RH, com automação de dados e portal web</span></li>
+          <li><span class="rot" data-i18n="sobre.rot.interesses">interesses</span><span data-i18n="sobre.val.interesses">IA aplicada, automação de processos e desenvolvimento de produto</span></li>
+          <li><span class="rot" data-i18n="sobre.rot.idiomas">idiomas</span><span data-i18n="sobre.val.idiomas">Português nativo e inglês intermediário para leitura técnica</span></li>
+        </ul>
+      </div>
+    </section>
 
-  <section class="hero wrap">
-    <p class="label">desenvolvedor de software</p>
-    <h1>Nathan Guimarães</h1>
-    <p class="lead">Construo software de ponta a ponta: processamento de imagens no backend em Go, interface em React ou aplicativo em Flutter. Último ano de Análise e Desenvolvimento de Sistemas no IFSP e estágio em desenvolvimento.</p>
-    <p class="local">Jacareí, SP · Brasil</p>
-    <p class="acoes">
-      <a class="btn" href="#projetos">Ver projetos</a>
-      <a class="btn btn--ghost" href="https://github.com/nathanhgo">GitHub</a>
-    </p>
-  </section>
+    <section class="section" id="projetos">
+      <div class="wrap">
+        <span class="num" data-i18n="proj.num">02 · projetos</span>
+        <h2 data-anima data-i18n="proj.titulo">O que eu construí</h2>
+        <ul class="projetos">
+        <li data-anima>
+          <h3 data-i18n="proj.fotofacil.titulo">proj.fotofacil.titulo</h3>
+          <p class="desc" data-i18n="proj.fotofacil.desc">proj.fotofacil.desc</p>
+          <p class="meta">Go · React · TypeScript · Electron · processamento de imagens</p>
+          <p class="links"><a href="https://github.com/nathanhgo/foto-facil" data-i18n="proj.link.codigo">Código no GitHub</a> · <a href="https://foto-facil.vercel.app" data-i18n="proj.link.site">Estudo de interface</a></p>
+      <div class="carrossel">
+        <div class="quadro">
+        <ul class="trilho">
+          <li>
+            <figure>
+              <img data-zoom src="assets/projetos/fotofacil-boas-vindas.jpg" alt="Tela de entrada do aplicativo, feita para quem nunca usou um editor de imagens." data-i18n-alt="cap.fotofacil.1" loading="lazy" decoding="async">
+              <figcaption data-i18n="cap.fotofacil.1">Tela de entrada do aplicativo, feita para quem nunca usou um editor de imagens.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img data-zoom src="assets/projetos/fotofacil-ui.jpg" alt="O editor de fluxo, com a biblioteca de nós à esquerda." data-i18n-alt="cap.fotofacil.2" loading="lazy" decoding="async">
+              <figcaption data-i18n="cap.fotofacil.2">O editor de fluxo, com a biblioteca de nós à esquerda.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img data-zoom src="assets/projetos/fotofacil-saida.jpg" alt="Saída do processamento: imagem de satélite segmentada pelo próprio fluxo." data-i18n-alt="cap.fotofacil.3" loading="lazy" decoding="async">
+              <figcaption data-i18n="cap.fotofacil.3">Saída do processamento: imagem de satélite segmentada pelo próprio fluxo.</figcaption>
+            </figure>
+          </li>
+        </ul>
+        </div>
+      </div>
+        </li>
+        <li data-anima>
+          <h3 data-i18n="proj.pipol.titulo">proj.pipol.titulo</h3>
+          <p class="desc" data-i18n="proj.pipol.desc">proj.pipol.desc</p>
+          <p class="meta">Python · automação de coleta · portal web</p>
+          <p class="links"><a href="https://vagas.pipol.com.br" data-i18n="proj.link.pipol">Ver o site</a></p>
+      <div class="carrossel">
+        <div class="quadro">
+        <ul class="trilho">
+          <li>
+            <figure>
+              <img data-zoom src="assets/projetos/pipol-site.jpg" alt="Busca pública de vagas do portal." data-i18n-alt="cap.pipol.1" loading="lazy" decoding="async">
+              <figcaption data-i18n="cap.pipol.1">Busca pública de vagas do portal.</figcaption>
+            </figure>
+          </li>
+        </ul>
+        </div>
+      </div>
+        </li>
+        <li data-anima>
+          <h3 data-i18n="proj.fortuna.titulo">proj.fortuna.titulo</h3>
+          <p class="desc" data-i18n="proj.fortuna.desc">proj.fortuna.desc</p>
+          <p class="meta">Next.js · TypeScript · Django · WebSockets · PostgreSQL</p>
+          <p class="links"><a href="https://fortuna-beige.vercel.app" data-i18n="proj.link.site">Ver funcionando</a> · <a href="https://github.com/nathanhgo/fortuna" data-i18n="proj.link.codigo">Código no GitHub</a></p>
+      <div class="carrossel">
+        <div class="quadro">
+        <ul class="trilho">
+          <li>
+            <figure>
+              <img data-zoom src="assets/projetos/fortuna-site.jpg" alt="Entrada e criação de sala: sem cadastro, só o link." data-i18n-alt="cap.fortuna.1" loading="lazy" decoding="async">
+              <figcaption data-i18n="cap.fortuna.1">Entrada e criação de sala: sem cadastro, só o link.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img data-zoom src="assets/projetos/fortuna-xadrez.jpg" alt="Xadrez." data-i18n-alt="cap.fortuna.2" loading="lazy" decoding="async">
+              <figcaption data-i18n="cap.fortuna.2">Xadrez.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img data-zoom src="assets/projetos/fortuna-coup.jpg" alt="Coup." data-i18n-alt="cap.fortuna.3" loading="lazy" decoding="async">
+              <figcaption data-i18n="cap.fortuna.3">Coup.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img data-zoom src="assets/projetos/fortuna-batalha-naval.jpg" alt="Batalha naval." data-i18n-alt="cap.fortuna.4" loading="lazy" decoding="async">
+              <figcaption data-i18n="cap.fortuna.4">Batalha naval.</figcaption>
+            </figure>
+          </li>
+        </ul>
+        </div>
+      </div>
+        </li>
+        <li data-anima>
+          <h3 data-i18n="proj.ficha.titulo">proj.ficha.titulo</h3>
+          <p class="desc" data-i18n="proj.ficha.desc">proj.ficha.desc</p>
+          <p class="meta">Flutter · Dart · PostgreSQL · Supabase</p>
+          <p class="links"><a href="https://ficha-digital-rpg.vercel.app" data-i18n="proj.link.site">Ver funcionando</a> · <a href="https://github.com/nathanhgo/ficha-digital-rpg" data-i18n="proj.link.codigo">Código no GitHub</a></p>
+      <div class="carrossel">
+        <div class="quadro">
+        <ul class="trilho">
+          <li>
+            <figure>
+              <img data-zoom src="assets/projetos/ficha-site.jpg" alt="Tela de entrada, na versão web do app." data-i18n-alt="cap.ficha.1" loading="lazy" decoding="async">
+              <figcaption data-i18n="cap.ficha.1">Tela de entrada, na versão web do app.</figcaption>
+            </figure>
+          </li>
+        </ul>
+        </div>
+      </div>
+        </li>
+        <li data-anima>
+          <h3 data-i18n="proj.sippat.titulo">SIPPAT: sistema do Posto de Atendimento ao Trabalhador</h3>
+          <p class="desc" data-i18n="proj.sippat.desc">Sistema de gestão do atendimento do PAT de Jacareí, feito em parceria com a Prefeitura. Controla cidadãos, perfil profissional, indicadores socioeconômicos e histórico de atendimentos, com importação de planilhas, criptografia, trilha de auditoria e anonimização de registros inativos para atender à LGPD.</p>
+          <p class="meta">NestJS · Angular · PostgreSQL · Prisma · LGPD</p>
+          <p class="links"><a href="https://github.com/nathanhgo/sippat" data-i18n="proj.link.codigo">Código no GitHub</a></p>
+        </li>
+        <li data-anima>
+          <h3 data-i18n="proj.bench.titulo">proj.bench.titulo</h3>
+          <p class="desc" data-i18n="proj.bench.desc">proj.bench.desc</p>
+          <p class="meta">Go · Python · OpenCV · medição de tempo e memória</p>
+          <p class="links"><a href="https://github.com/nathanhgo/image-processing-benchmark" data-i18n="proj.link.codigo">Código no GitHub</a></p>
+      <div class="carrossel">
+        <div class="quadro">
+        <ul class="trilho">
+          <li>
+            <figure>
+              <img data-zoom src="assets/projetos/benchmark-tempo.png" alt="Tempo e memória de cada arquitetura, medidos no repositório." data-i18n-alt="cap.bench.1" loading="lazy" decoding="async">
+              <figcaption data-i18n="cap.bench.1">Tempo e memória de cada arquitetura, medidos no repositório.</figcaption>
+            </figure>
+          </li>
+        </ul>
+        </div>
+      </div>
+        </li>
+        <li data-anima>
+          <h3 data-i18n="proj.sem.titulo">proj.sem.titulo</h3>
+          <p class="desc" data-i18n="proj.sem.desc">proj.sem.desc</p>
+          <p class="meta">Python · NLP · embeddings · casamento semântico</p>
+          <p class="links"><a href="https://github.com/nathanhgo/semantic-skill-matcher" data-i18n="proj.link.codigo">Código no GitHub</a></p>
+        </li>
+        </ul>
+        <p class="label" style="margin-top:1.5rem"><span data-i18n="proj.outros">outros repositórios em</span> <a href="https://github.com/nathanhgo">github.com/nathanhgo</a></p>
+      </div>
+    </section>
 
-  <section id="sobre" class="section wrap">
-    <span class="num">01 · sobre</span>
-    <h2>O que eu faço</h2>
-    <p>Curso o último ano de Análise e Desenvolvimento de Sistemas no IFSP, em Jacareí, e trabalho como estagiário de desenvolvimento — lido com automação de coleta de dados e manutenção de um portal de vagas. Fora do estágio construo as minhas próprias ferramentas: um editor de imagens por nós, um site de jogos de tabuleiro para jogar com amigos por link e um aplicativo de fichas de RPG.</p>
-    <p>Me interessa software que decide, não só software que executa: visão computacional aplicada a imagens aéreas, automação de processo repetitivo e processamento digital de imagens. Por isso mesmo prefiro entender o problema inteiro antes de escolher a ferramenta — já escrevi backend em Go e Python, frontend em React e TypeScript, aplicativo em Flutter e um benchmark só para medir onde cada modelo de concorrência ganha.</p>
-    <ul class="fatos">
-      <li><span class="rot">formação</span>Tecnologia em Análise e Desenvolvimento de Sistemas, IFSP campus Jacareí — último ano</li>
-      <li><span class="rot">idiomas</span>Português nativo · inglês intermediário para leitura técnica e escrita</li>
-      <li><span class="rot">interesses</span>Sistemas autônomos, visão computacional, automação e processamento de imagens</li>
-      <li><span class="rot">também faço</span>Páginas para comércio de bairro — ver a seção de demonstrações</li>
-    </ul>
-  </section>
+    <section class="section" id="paginas">
+      <div class="wrap">
+        <span class="num" data-i18n="paginas.num">03 · páginas para negócios</span>
+        <h2 data-anima data-i18n="paginas.titulo">Uma página que trabalha pela loja</h2>
+        <p data-anima data-i18n="paginas.p1">Faço páginas de uma tela para comércios e lojas, com o que resolve o dia a dia de quem atende balcão: o negócio aparece para quem procura, preços e horário ficam escritos sem ninguém precisar perguntar e o contato cai direto no WhatsApp com a mensagem já escrita. Também faço automação de tarefas repetitivas e organização de catálogo.</p>
+        <p data-anima data-i18n="paginas.p2">Algumas páginas de demonstração estão sendo publicadas para mostrar o resultado antes de qualquer contratação. Nenhuma delas é o site oficial de um negócio, e todas saem do ar se o dono pedir.</p>
+        <div class="acoes" data-anima>
+          <a class="btn" href="#orcamento" data-i18n="paginas.cta1">Quero uma página assim</a>
+          <a class="btn btn--ghost" href="#contato" data-i18n="paginas.cta2">Ver contato</a>
+        </div>
+      </div>
+    </section>
 
-  <section id="projetos" class="section wrap">
-    <span class="num">02 · projetos</span>
-    <h2>O que já construí</h2>
-    <ul class="projetos">
+    <section class="section" id="ferramentas">
+      <div class="wrap">
+        <span class="num" data-i18n="ferr.num">04 · ferramentas</span>
+        <h2 data-anima data-i18n="ferr.titulo">Com o que eu trabalho</h2>
+        <ul class="badges" data-anima>
+          <li>Go</li>
+          <li>Python</li>
+          <li>TypeScript</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Flutter</li>
+          <li>Dart</li>
+          <li>Node.js</li>
+          <li>Django</li>
+          <li>REST</li>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+          <li>SQLite</li>
+          <li>Git</li>
+          <li>Linux</li>
+          <li>Docker</li>
+          <li>OpenCV</li>
+          <li>Pandas</li>
+          <li>Vitest</li>
+        </ul>
+      </div>
+    </section>
 
-      <li>
-        <h3>FotoFácil — editor de imagens por nós</h3>
-        <p class="desc">Processamento de imagens em lote a partir de um fluxo montado visualmente: em vez de repetir a mesma edição arquivo por arquivo, a pessoa liga os blocos de processamento num quadro e aplica tudo em uma pasta inteira de uma vez. Trabalho apresentado no WORCAP, congresso do INPE.</p>
-        <p class="meta">electron · react · typescript · go</p>
-        <p class="links"><a href="https://github.com/nathanhgo/foto-facil">Código no GitHub</a></p>
-      </li>
+    <section class="section" id="contato">
+      <div class="wrap">
+        <span class="num" data-i18n="cont.num">05 · contato</span>
+        <h2 data-anima data-i18n="cont.titulo">Vamos falar do seu projeto</h2>
+        <p data-anima data-i18n="cont.p1">Me conta o que você precisa e eu respondo com o que dá para fazer, o prazo e o valor. Sem compromisso.</p>
+        <p data-anima data-i18n="cont.p2">Também estou no LinkedIn, que é onde costumo acompanhar oportunidades.</p>
+        <ul class="links-lista" data-anima>
+          <li><span class="rot" data-i18n="cont.rot.email">e-mail</span>
+            <span class="linha-email"><a href="mailto:nathanhguimaraes@gmail.com">nathanhguimaraes@gmail.com</a>
+            <button class="copiar" type="button" data-copiar="nathanhguimaraes@gmail.com" data-i18n="copiar">copiar</button>
+            <span class="copiar-aviso" role="status" aria-live="polite"></span></span></li>
+          <li><span class="rot" data-i18n="cont.rot.github">github</span><a href="https://github.com/nathanhgo">github.com/nathanhgo</a></li>
+          <li><span class="rot" data-i18n="cont.rot.linkedin">linkedin</span><a href="https://linkedin.com/in/nathanguimaraes">linkedin.com/in/nathanguimaraes</a></li>
+        </ul>
+      </div>
+    </section>
 
-      <li>
-        <h3>Fortuna — jogos de mesa para jogar por link</h3>
-        <p class="desc">Versões digitais de jogos de mesa clássicos (xadrez, Coup, batalha naval) em salas compartilháveis por link, sem cadastro e sem login: quem recebe o endereço entra e joga. O projeto existe porque reunir o grupo presencialmente é a parte difícil.</p>
-        <p class="meta">next.js · react · python</p>
-        <p class="links"><a href="https://github.com/nathanhgo/fortuna">Código no GitHub</a></p>
-      </li>
+    <section class="cta" id="orcamento">
+      <div class="wrap">
+        <span class="num" data-i18n="form.rotulo">06 · orçamento</span>
+        <h2 data-anima data-i18n="form.titulo">Peça um orçamento em três campos</h2>
+        <p data-i18n="form.p">Preencha os três campos e o seu programa de e-mail abre com a mensagem pronta. Se preferir, use o WhatsApp ou o e-mail direto abaixo.</p>
+        <form class="form-contato" data-form action="mailto:nathanhguimaraes@gmail.com" method="post" enctype="text/plain">
+          <label><span data-i18n="form.nome">seu nome</span><input name="nome" type="text" required></label>
+          <label><span data-i18n="form.contato">seu e-mail ou WhatsApp</span><input name="contato" type="text"></label>
+          <label><span data-i18n="form.mensagem">o que você precisa</span><textarea name="mensagem" required></textarea></label>
+          <button class="btn" type="submit" data-i18n="form.enviar">Preparar e-mail</button>
+          <p class="aviso" role="status" aria-live="polite"></p>
+        </form>
+        <div class="acoes">
+          <a class="btn btn--ghost" href="https://linkedin.com/in/nathanguimaraes" data-i18n="cont.rot.linkedin">linkedin</a>
+          <a class="btn btn--ghost" href="https://github.com/nathanhgo" data-i18n="cont.rot.github">github</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-      <li>
-        <h3>Ficha Digital RPG</h3>
-        <p class="desc">Aplicativo para fichas, sessões e inventário de um sistema de RPG próprio, baseado em D&amp;D 5e. O mestre e os jogadores enxergam a mesma ficha atualizada em tempo real durante a sessão, o que elimina a papelada na mesa.</p>
-        <p class="meta">flutter · dart · supabase</p>
-        <p class="links"><a href="https://github.com/nathanhgo/ficha-digital-rpg">Código no GitHub</a></p>
-      </li>
+  <footer class="rodape">
+    <div class="wrap">
+      <p data-i18n="rodape.local">Nathan Guimarães · Jacareí, SP</p>
+      <p data-i18n="rodape.atualizado">Última atualização: setembro de 2026.</p>
+    </div>
+  </footer>
 
-      <li>
-        <h3>Benchmark de processamento de imagens</h3>
-        <p class="desc">Comparação medida entre modelos de concorrência no processamento de imagens em lote: threads e processos em Python contra goroutines em Go, com o efeito do GIL aparecendo nos números. Feito para provar a escolha de arquitetura em vez de repetir o senso comum.</p>
-        <p class="meta">python · go · opencv</p>
-        <p class="links"><a href="https://github.com/nathanhgo/image-processing-benchmark">Código no GitHub</a></p>
-      </li>
-
-      <li>
-        <h3>Semantic Skill Matcher</h3>
-        <p class="desc">Prova de conceito para o problema de vocabulário em recrutamento: quem escreve "programo em py" precisa ser encontrado pela vaga de "desenvolvedor Python". O projeto troca a busca por palavra-chave por casamento semântico entre currículo e vaga.</p>
-        <p class="meta">prova de conceito</p>
-        <p class="links"><a href="https://github.com/nathanhgo/semantic-skill-matcher">Código no GitHub</a></p>
-      </li>
-
-      <li>
-        <h3>Vagas — pipeline diário de candidaturas</h3>
-        <p class="desc">Rotina que roda todo dia: coleta vagas de estágio e júnior, filtra por perfil e localização, monta o resumo do dia, gera um currículo adaptado para cada vaga e registra as candidaturas em planilha. A coleta e o filtro são em Python puro, sem custo de modelo de linguagem.</p>
-        <p class="meta">python · automação · cron</p>
-        <p class="links"><span class="muted">Projeto pessoal, sem repositório público</span></p>
-      </li>
-
-      <li>
-        <h3>CriptoLab Web <span class="muted">(trabalho em grupo, faculdade)</span></h3>
-        <p class="desc">Sistema web com One Time Pad, Cifra de César, Vigenère e Cifra de Hill implementados do zero — sem nenhuma biblioteca de criptografia — mais um módulo de criptoanálise com força bruta sobre a César e demonstração do ataque por reutilização de chave em OTP.</p>
-        <p class="meta">javascript · html · css</p>
-        <p class="links"><a href="https://github.com/AliceBiju/CriptoLab_Web">Código no GitHub</a></p>
-      </li>
-
-    </ul>
-    <p class="label" style="margin-top:2rem">outros repositórios em <a href="https://github.com/nathanhgo?tab=repositories">github.com/nathanhgo</a></p>
-  </section>
-
-  <section id="demonstracoes" class="section wrap">
-    <span class="num">03 · demonstrações</span>
-    <h2>Páginas para comércio de bairro</h2>
-    <p>Faço páginas de uma tela para comércio local com o que resolve o dia a dia de quem atende no balcão: o negócio aparece para quem procura pelo bairro, preços e horário ficam escritos sem ninguém precisar perguntar, e o contato cai direto no WhatsApp com a mensagem já escrita.</p>
-    <!-- TROCAR: quando o repositório demos estiver publicado, transformar a frase abaixo em link
-         para o endereço real. NÃO inventar endereço enquanto ele não existir. -->
-    <p>Nenhuma delas é o site oficial de um negócio: são propostas feitas antes de qualquer contratação, e saem do ar quando o dono pede. <span class="muted">A lista de demonstrações está em construção — o endereço entra aqui assim que o primeiro lote de páginas estiver publicado.</span></p>
-  </section>
-
-  <section id="ferramentas" class="section wrap">
-    <span class="num">04 · ferramentas</span>
-    <h2>Com o que eu trabalho</h2>
-    <ul class="ferramentas">
-      <li>Python</li><li>Go</li><li>TypeScript</li><li>JavaScript</li><li>React</li><li>Next.js</li><li>Flutter</li><li>Dart</li><li>Electron</li><li>PostgreSQL</li><li>Supabase</li><li>Docker</li><li>Linux</li><li>Git</li>
-    </ul>
-  </section>
-
-  <section id="contato" class="section wrap">
-    <span class="num">05 · contato</span>
-    <h2>Falar comigo</h2>
-    <p>Escreva para <a href="mailto:nathanhguimaraes@gmail.com">nathanhguimaraes@gmail.com</a><button class="btn btn--ghost" type="button" hidden data-copiar-email="nathanhguimaraes@gmail.com">Copiar e-mail</button><span class="aviso-copia" data-copiar-aviso aria-live="polite"></span></p>
-    <p>Aberto a conversas sobre estágio ou posição júnior em desenvolvimento, e a projetos de página para comércio local.</p>
-  </section>
-
-</main>
-
-<footer class="rodape">
-  <div class="wrap">
-    <p>Nathan Guimarães — Jacareí, SP</p>
-    <p>Página escrita à mão em HTML e CSS, sem framework e sem rastreamento. Última atualização: setembro de 2026.</p>
-  </div>
-</footer>
-
-<script src="./assets/main.js" defer></script>
+  <dialog id="zoom">
+    <button class="fechar" type="button" data-fechar data-i18n="zoom.fechar">fechar</button>
+    <figure>
+      <img alt="">
+      <figcaption></figcaption>
+    </figure>
+  </dialog>
 </body>
 </html>
