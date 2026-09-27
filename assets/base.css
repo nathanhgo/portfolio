@@ -122,6 +122,7 @@ strong { font-weight: 600; }
 .vitrine { margin: 0; }
 .vitrine img { cursor: zoom-in; width: 100%; aspect-ratio: 16 / 10; height: auto; object-fit: cover; object-position: left top;
   border: 1px solid var(--rule); border-radius: var(--radius); display: block; }
+html[data-tema="escuro"] .vitrine img, html[data-tema="escuro"] .carrossel img { border-color: var(--accent); }
 .vitrine figcaption { font-family: var(--font-mono); font-size: .7rem; letter-spacing: .06em; color: var(--ink-soft);
   margin-top: .5rem; text-transform: uppercase; }
 
