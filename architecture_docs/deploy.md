@@ -19,6 +19,15 @@ Domínio registrado (sugestão: Registro.br, `.com.br`, cerca de R$ 40/ano) e co
    registros CNAME indicados.
 6. Apontar o subdomínio das demos (`demos.<dominio>`) para o projeto do repositório `demos`.
 
+## Números do plano gratuito (verificados na documentação, 27/09/2026)
+
+- 500 builds/mês · 100 domínios por projeto · 20.000 arquivos · 25 MiB por arquivo.
+- Arquivo estático: requisições grátis e ilimitadas. Sem restrição de uso comercial.
+- **Formulário de contato**: em site estático não existe endpoint. Duas saídas, sem trocar de stack:
+  1. Pages Function (`functions/contato.js`) — consome a cota do Workers Free: 100.000 req/dia, e o
+     envio de e-mail fica a cargo de uma API externa (Resend/Brevo têm faixa gratuita).
+  2. Serviço de formulário (Formspree/Web3Forms) — um `action` no `<form>`, sem backend próprio.
+
 ## Checklist após publicar
 
 - [ ] abrir no celular e conferir tipografia, toque e tempo de abertura
