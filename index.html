@@ -4,16 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title data-i18n="meta.titulo">Nathan Guimarães | desenvolvedor de software em Jacareí</title>
-  <meta name="description" content="Desenvolvedor de software em Jacareí, SP. Páginas que trazem contato, automação de tarefas repetitivas e aplicações web e mobile com Go, Python, TypeScript, React e Flutter.">
+  <meta name="description" content="Desenvolvedor de software em Jacareí, SP. Faço páginas que trazem contato, automação de tarefas e aplicações web e mobile.">
   <meta name="author" content="Nathan Guimarães">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="theme-color" content="#10382e">
   <link rel="canonical" href="https://nathanguimaraes.com.br/">
   <meta property="og:url" content="https://nathanguimaraes.com.br/">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Nathan Guimarães | desenvolvedor de software">
   <meta property="og:description" content="Páginas que trazem contato, automação de tarefas repetitivas e aplicações web e mobile.">
-  <meta property="og:image" content="https://nathanguimaraes.com.br/assets/projetos/fotofacil-boas-vindas.jpg">
+  <meta property="og:image" content="https://nathanguimaraes.com.br/assets/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nathan Guimarães, desenvolvedor de software em Jacareí">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nathan Guimarães | desenvolvedor de software">
+  <meta name="twitter:description" content="Páginas que trazem contato, automação de tarefas e aplicações web e mobile.">
+  <meta name="twitter:image" content="https://nathanguimaraes.com.br/assets/og-card.png">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +29,99 @@
   <link rel="stylesheet" href="assets/base.css">
   <script src="assets/idiomas.js" defer></script>
   <script src="assets/main.js" defer></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://nathanguimaraes.com.br/#pessoa",
+      "name": "Nathan Guimarães",
+      "url": "https://nathanguimaraes.com.br/",
+      "jobTitle": "Desenvolvedor de software",
+      "email": "mailto:nathanhguimaraes@gmail.com",
+      "image": "https://nathanguimaraes.com.br/assets/og-card.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jacareí",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://github.com/nathanhgo",
+        "https://www.linkedin.com/in/nathanguimaraes"
+      ],
+      "knowsAbout": [
+        "desenvolvimento web",
+        "Go",
+        "Python",
+        "TypeScript",
+        "React",
+        "Flutter",
+        "processamento de imagens",
+        "automação de tarefas",
+        "presença digital para comércio local"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Instituto Federal de São Paulo"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nathanguimaraes.com.br/#site",
+      "url": "https://nathanguimaraes.com.br/",
+      "name": "Nathan Guimarães",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://nathanguimaraes.com.br/#pessoa"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://nathanguimaraes.com.br/#pagina",
+      "url": "https://nathanguimaraes.com.br/",
+      "name": "Nathan Guimarães | desenvolvedor de software em Jacareí",
+      "isPartOf": {
+        "@id": "https://nathanguimaraes.com.br/#site"
+      },
+      "about": {
+        "@id": "https://nathanguimaraes.com.br/#pessoa"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://nathanguimaraes.com.br/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Você faz páginas para comércios e lojas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Faço. Páginas de uma tela que aparecem na busca com horário, endereço e serviços, e levam o contato direto para o WhatsApp com a mensagem já escrita."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Atende só Jacareí?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Moro em Jacareí e atendo a região presencialmente. Para o resto do país o trabalho é remoto, e a página fica pronta em poucos dias."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Está disponível para trabalhar agora?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Estou disponível para projetos freelancer e para conversas sobre oportunidades de desenvolvimento."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <header class="topo">
@@ -31,6 +132,7 @@
         <a href="#projetos" data-i18n="nav.projetos">Projetos</a>
         <a href="#paginas" data-i18n="nav.paginas">Páginas</a>
         <a href="#ferramentas" data-i18n="nav.ferramentas">Ferramentas</a>
+        <a href="#perguntas" data-i18n="nav.perguntas">Perguntas</a>
         <a href="#contato" data-i18n="nav.contato">Contato</a>
       </nav>
       <div class="controles">
@@ -266,9 +368,21 @@
       </div>
     </section>
 
+    <section class="section" id="perguntas">
+      <div class="wrap">
+        <span class="num" data-i18n="faq.num">05 · perguntas</span>
+        <h2 data-anima data-i18n="faq.titulo">O que costumam me perguntar</h2>
+        <table class="simples">
+          <tr><th data-i18n="faq.q1">Você faz páginas para comércios e lojas?</th><td data-i18n="faq.a1">Faço. Páginas de uma tela que aparecem na busca com horário, endereço e serviços, e levam o contato direto para o WhatsApp com a mensagem já escrita.</td></tr>
+          <tr><th data-i18n="faq.q2">Atende só Jacareí?</th><td data-i18n="faq.a2">Moro em Jacareí e atendo a região presencialmente. Para o resto do país o trabalho é remoto, e a página fica pronta em poucos dias.</td></tr>
+          <tr><th data-i18n="faq.q3">Está disponível para trabalhar agora?</th><td data-i18n="faq.a3">Estou disponível para projetos freelancer e para conversas sobre oportunidades de desenvolvimento.</td></tr>
+        </table>
+      </div>
+    </section>
+
     <section class="section" id="contato">
       <div class="wrap">
-        <span class="num" data-i18n="cont.num">05 · contato</span>
+        <span class="num" data-i18n="cont.num">06 · contato</span>
         <h2 data-anima data-i18n="cont.titulo">Vamos falar do seu projeto</h2>
         <p data-anima data-i18n="cont.p1">Me conta o que você precisa e eu respondo com o que dá para fazer, o prazo e o valor. Sem compromisso.</p>
         <p data-anima data-i18n="cont.p2">Também estou no LinkedIn, que é onde costumo acompanhar oportunidades.</p>
@@ -285,7 +399,7 @@
 
     <section class="cta" id="orcamento">
       <div class="wrap">
-        <span class="num" data-i18n="form.rotulo">06 · orçamento</span>
+        <span class="num" data-i18n="form.rotulo">07 · orçamento</span>
         <h2 data-anima data-i18n="form.titulo">Peça um orçamento em três campos</h2>
         <p data-i18n="form.p">Preencha os três campos e o seu programa de e-mail abre com a mensagem pronta. Se preferir, use o WhatsApp ou o e-mail direto abaixo.</p>
         <form class="form-contato" data-form action="mailto:nathanhguimaraes@gmail.com" method="post" enctype="text/plain">
