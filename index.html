@@ -3,29 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title data-i18n="meta.titulo">Nathan Guimarães | desenvolvedor de software em Jacareí</title>
-  <meta name="description" content="Desenvolvedor de software em Jacareí, SP. Faço páginas que trazem contato, automação de tarefas e aplicações web e mobile.">
+  <title data-i18n="meta.titulo">Criação de sites e automação em Jacareí | Nathan Guimarães</title>
+  <meta name="description" content="Criação de sites para comércios e lojas de Jacareí, SP: a página aparece na busca com horário, endereço e serviços, e o contato cai direto no seu WhatsApp. Também faço automação de tarefas e sistemas sob medida.">
   <meta name="author" content="Nathan Guimarães">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="theme-color" content="#10382e">
   <link rel="canonical" href="https://nathanguimaraes.com.br/">
   <meta property="og:url" content="https://nathanguimaraes.com.br/">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Nathan Guimarães | desenvolvedor de software">
-  <meta property="og:description" content="Páginas que trazem contato, automação de tarefas repetitivas e aplicações web e mobile.">
+  <meta property="og:site_name" content="Nathan Guimarães">
+  <meta property="og:title" content="Criação de sites e automação em Jacareí | Nathan Guimarães">
+  <meta property="og:description" content="A página do seu negócio aparecendo na busca do Google, com o contato caindo direto no WhatsApp.">
   <meta property="og:image" content="https://nathanguimaraes.com.br/assets/og-card.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Nathan Guimarães, desenvolvedor de software em Jacareí">
   <meta property="og:locale" content="pt_BR">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Nathan Guimarães | desenvolvedor de software">
-  <meta name="twitter:description" content="Páginas que trazem contato, automação de tarefas e aplicações web e mobile.">
+  <meta name="twitter:title" content="Criação de sites e automação em Jacareí | Nathan Guimarães">
+  <meta name="twitter:description" content="A página do seu negócio aparecendo na busca do Google, com o contato caindo direto no WhatsApp.">
   <meta name="twitter:image" content="https://nathanguimaraes.com.br/assets/og-card.png">
+  <meta name="twitter:image:alt" content="Nathan Guimarães, criação de sites em Jacareí">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="assets/base.css">
   <script src="assets/idiomas.js" defer></script>
   <script src="assets/main.js" defer></script>
@@ -40,6 +40,11 @@
       "url": "https://nathanguimaraes.com.br/",
       "jobTitle": "Desenvolvedor de software",
       "email": "mailto:nathanhguimaraes@gmail.com",
+      "telephone": "+55 12 99764-0390",
+      "areaServed": {
+        "@type": "City",
+        "name": "Jacareí"
+      },
       "image": "https://nathanguimaraes.com.br/assets/og-card.png",
       "address": {
         "@type": "PostalAddress",
@@ -68,6 +73,20 @@
       }
     },
     {
+      "@type": "Service",
+      "@id": "https://nathanguimaraes.com.br/#servico",
+      "name": "Criação de sites para comércio local",
+      "serviceType": "Criação de sites e páginas para comércios e lojas",
+      "description": "Páginas de uma tela para comércios e lojas, com horário, endereço e serviços visíveis na busca do Google, e contato direto no WhatsApp.",
+      "provider": {
+        "@id": "https://nathanguimaraes.com.br/#pessoa"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Jacareí"
+      }
+    },
+    {
       "@type": "WebSite",
       "@id": "https://nathanguimaraes.com.br/#site",
       "url": "https://nathanguimaraes.com.br/",
@@ -81,7 +100,7 @@
       "@type": "ProfilePage",
       "@id": "https://nathanguimaraes.com.br/#pagina",
       "url": "https://nathanguimaraes.com.br/",
-      "name": "Nathan Guimarães | desenvolvedor de software em Jacareí",
+      "name": "Criação de sites e automação em Jacareí | Nathan Guimarães",
       "isPartOf": {
         "@id": "https://nathanguimaraes.com.br/#site"
       },
@@ -111,6 +130,22 @@
         },
         {
           "@type": "Question",
+          "name": "Quanto tempo leva para a página ficar pronta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Poucos dias depois de eu receber as informações do negócio. O andamento você acompanha pelo WhatsApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Já tenho Instagram. Preciso de uma página?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ajuda bastante. O Instagram fala com quem já te segue; a página aparece para quem procura no Google e leva essa pessoa direto para o seu WhatsApp."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Está disponível para trabalhar agora?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -128,9 +163,9 @@
     <div class="wrap">
       <a class="marca" href="#topo">Nathan Guimarães</a>
       <nav aria-label="Seções do site">
+        <a href="#paginas" data-i18n="nav.paginas">Páginas</a>
         <a href="#sobre" data-i18n="nav.sobre">Sobre</a>
         <a href="#projetos" data-i18n="nav.projetos">Projetos</a>
-        <a href="#paginas" data-i18n="nav.paginas">Páginas</a>
         <a href="#ferramentas" data-i18n="nav.ferramentas">Ferramentas</a>
         <a href="#perguntas" data-i18n="nav.perguntas">Perguntas</a>
         <a href="#contato" data-i18n="nav.contato">Contato</a>
@@ -152,26 +187,45 @@
     <section class="hero" id="topo">
       <div class="wrap grid">
         <div>
-          <p class="label" data-i18n="hero.rotulo">desenvolvedor de software</p>
-          <h1 data-anima>Nathan Guimarães</h1>
-          <p class="lead" data-anima data-i18n="hero.lead">Faço software para resolver problema de verdade: páginas que trazem contato, automações que devolvem tempo e aplicações que as pessoas usam todo dia. Sou de Jacareí, no interior de São Paulo, e estou no último ano de Análise e Desenvolvimento de Sistemas.</p>
-          <p data-anima data-i18n="hero.disponivel">Disponível para projetos freelancer e conversas sobre oportunidades de desenvolvimento.</p>
+          <p class="label" data-i18n="hero.rotulo">criação de sites em Jacareí</p>
+          <h1 data-anima data-i18n="hero.titulo">Sites para o seu negócio em Jacareí</h1>
+          <p class="lead" data-anima data-i18n="hero.lead">Faço a página do seu negócio aparecer no Google com horário, endereço e serviços, e o contato cai direto no seu WhatsApp. Também automatizo tarefas repetitivas e construo sistemas sob medida para o seu jeito de trabalhar.</p>
+          <p data-anima data-i18n="hero.disponivel">Atendo Jacareí e região presencialmente, e o resto do Brasil de forma remota.</p>
           <div class="acoes" data-anima>
-            <a class="btn" href="#orcamento" data-i18n="hero.cta1">Entrar em contato</a>
-            <a class="btn btn--ghost" href="#projetos" data-i18n="hero.cta2">Ver projetos</a>
+            <a class="btn" href="https://wa.me/5512997640390?text=Ol%C3%A1%2C%20Nathan!%20Vim%20pelo%20seu%20site%20e%20quero%20uma%20p%C3%A1gina%20para%20o%20meu%20neg%C3%B3cio." rel="noopener" data-i18n="hero.cta1">Falar no WhatsApp</a>
+            <a class="btn btn--ghost" href="#paginas" data-i18n="hero.cta2">Ver páginas prontas</a>
           </div>
           <p class="local">Jacareí · SP · Brasil</p>
         </div>
         <figure class="vitrine" data-anima>
-          <img data-zoom src="assets/projetos/fotofacil-ui.jpg" alt="Tela do editor de fluxo do FotoFácil, com a biblioteca de nós à esquerda" width="1000" height="640">
+          <img data-zoom src="assets/projetos/fotofacil-ui.jpg" alt="Tela do editor de fluxo do FotoFácil, com a biblioteca de nós à esquerda" width="1000" height="643">
           <figcaption data-i18n="hero.vitrine">FotoFácil: o editor de fluxo que eu construí</figcaption>
         </figure>
       </div>
     </section>
 
+    <section class="section" id="paginas">
+      <div class="wrap">
+        <span class="num" data-i18n="paginas.num">01 · páginas para negócios</span>
+        <h2 data-anima data-i18n="paginas.titulo">Uma página que trabalha pela loja</h2>
+        <p data-anima data-i18n="paginas.p1">Faço páginas de uma tela para comércios e lojas, com o que resolve o dia a dia de quem atende balcão: o negócio aparece para quem procura, preços e horário ficam escritos sem ninguém precisar perguntar e o contato cai direto no WhatsApp com a mensagem já escrita. Também faço automação de tarefas repetitivas e organização de catálogo.</p>
+        <p data-anima data-i18n="paginas.p2">Três páginas de demonstração já estão no ar, feitas para negócios daqui. Nenhuma delas é o site oficial de um negócio, e todas saem do ar se o dono pedir.</p>
+        <ul class="links-lista" data-anima>
+          <li><span class="rot" data-i18n="paginas.rot.demo">abrir no celular</span><a href="https://demos.nathanguimaraes.com.br/kareca-pneus/" rel="noopener">Kareca Pneus, oficina e pneus</a></li>
+          <li><span class="rot" data-i18n="paginas.rot.demo">abrir no celular</span><a href="https://demos.nathanguimaraes.com.br/comercial-cobra/" rel="noopener">Comercial Cobra, material de construção</a></li>
+          <li><span class="rot" data-i18n="paginas.rot.demo">abrir no celular</span><a href="https://demos.nathanguimaraes.com.br/stylus-moda/" rel="noopener">Stylus Moda, quatro lojas de roupa</a></li>
+        </ul>
+        <p class="label" data-anima><a href="https://demos.nathanguimaraes.com.br/" rel="noopener"><span data-i18n="paginas.todas">ver todas as demonstrações em</span> demos.nathanguimaraes.com.br</a></p>
+        <div class="acoes" data-anima>
+          <a class="btn" href="https://wa.me/5512997640390?text=Ol%C3%A1%2C%20Nathan!%20Vim%20pelo%20seu%20site%20e%20quero%20uma%20p%C3%A1gina%20para%20o%20meu%20neg%C3%B3cio." rel="noopener" data-i18n="paginas.cta1">Quero uma página assim</a>
+          <a class="btn btn--ghost" href="#perguntas" data-i18n="paginas.cta2">Tirar dúvidas</a>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="sobre">
       <div class="wrap">
-        <span class="num" data-i18n="sobre.num">01 · sobre</span>
+        <span class="num" data-i18n="sobre.num">02 · sobre</span>
         <h2 data-anima data-i18n="sobre.titulo">Quem está do outro lado</h2>
         <p data-anima data-i18n="sobre.p1">Curso o último ano de Análise e Desenvolvimento de Sistemas no IFSP, em Jacareí, e trabalho como estagiário de desenvolvimento em uma empresa de tecnologia de RH, onde cuido de automação de coleta de dados e de um portal usado em todo o Brasil. Fora do trabalho construo minhas próprias ferramentas: um editor de imagens por nós, jogos de tabuleiro para jogar com amigos por link e um aplicativo de fichas de RPG.</p>
         <p data-anima data-i18n="sobre.p2">Me interessa software que resolve problema: visão computacional aplicada a imagens aéreas, automação de tarefas repetitivas e processamento digital de imagens. Também faço iniciação científica na área. Antes de escolher ferramenta eu quero entender o problema inteiro, e é por isso que já escrevi backend em Go e Python, frontend em React, aplicativo em Flutter e até um benchmark só para medir onde cada modelo de concorrência ganha.</p>
@@ -186,32 +240,32 @@
 
     <section class="section" id="projetos">
       <div class="wrap">
-        <span class="num" data-i18n="proj.num">02 · projetos</span>
+        <span class="num" data-i18n="proj.num">03 · projetos</span>
         <h2 data-anima data-i18n="proj.titulo">O que eu construí</h2>
         <ul class="projetos">
         <li data-anima>
           <h3 data-i18n="proj.fotofacil.titulo">proj.fotofacil.titulo</h3>
           <p class="desc" data-i18n="proj.fotofacil.desc">proj.fotofacil.desc</p>
           <p class="meta">Go · React · TypeScript · Electron · processamento de imagens</p>
-          <p class="links"><a href="https://github.com/nathanhgo/foto-facil" data-i18n="proj.link.codigo">Código no GitHub</a> · <a href="https://foto-facil.vercel.app" data-i18n="proj.link.site">Estudo de interface</a></p>
+          <p class="links"><a href="https://github.com/nathanhgo/foto-facil" rel="noopener" data-i18n="proj.link.codigo">Código no GitHub</a> · <a href="https://foto-facil.vercel.app" rel="noopener" data-i18n="proj.link.site">Estudo de interface</a></p>
       <div class="carrossel">
         <div class="quadro">
         <ul class="trilho">
           <li>
             <figure>
-              <img data-zoom src="assets/projetos/fotofacil-boas-vindas.jpg" alt="Tela de entrada do aplicativo, feita para quem nunca usou um editor de imagens." data-i18n-alt="cap.fotofacil.1" loading="lazy" decoding="async">
+              <img data-zoom src="assets/projetos/fotofacil-boas-vindas.jpg" width="1000" height="625" alt="Tela de entrada do aplicativo, feita para quem nunca usou um editor de imagens." data-i18n-alt="cap.fotofacil.1" loading="lazy" decoding="async">
               <figcaption data-i18n="cap.fotofacil.1">Tela de entrada do aplicativo, feita para quem nunca usou um editor de imagens.</figcaption>
             </figure>
           </li>
           <li>
             <figure>
-              <img data-zoom src="assets/projetos/fotofacil-ui.jpg" alt="O editor de fluxo, com a biblioteca de nós à esquerda." data-i18n-alt="cap.fotofacil.2" loading="lazy" decoding="async">
+              <img data-zoom src="assets/projetos/fotofacil-ui.jpg" width="1000" height="643" alt="O editor de fluxo, com a biblioteca de nós à esquerda." data-i18n-alt="cap.fotofacil.2" loading="lazy" decoding="async">
               <figcaption data-i18n="cap.fotofacil.2">O editor de fluxo, com a biblioteca de nós à esquerda.</figcaption>
             </figure>
           </li>
           <li>
             <figure>
-              <img data-zoom src="assets/projetos/fotofacil-saida.jpg" alt="Saída do processamento: imagem de satélite segmentada pelo próprio fluxo." data-i18n-alt="cap.fotofacil.3" loading="lazy" decoding="async">
+              <img data-zoom src="assets/projetos/fotofacil-saida.jpg" width="480" height="480" alt="Saída do processamento: imagem de satélite segmentada pelo próprio fluxo." data-i18n-alt="cap.fotofacil.3" loading="lazy" decoding="async">
               <figcaption data-i18n="cap.fotofacil.3">Saída do processamento: imagem de satélite segmentada pelo próprio fluxo.</figcaption>
             </figure>
           </li>
@@ -223,13 +277,13 @@
           <h3 data-i18n="proj.pipol.titulo">proj.pipol.titulo</h3>
           <p class="desc" data-i18n="proj.pipol.desc">proj.pipol.desc</p>
           <p class="meta">Python · automação de coleta · portal web</p>
-          <p class="links"><a href="https://vagas.pipol.com.br" data-i18n="proj.link.pipol">Ver o site</a></p>
+          <p class="links"><a href="https://vagas.pipol.com.br" rel="noopener" data-i18n="proj.link.pipol">Ver o site</a></p>
       <div class="carrossel">
         <div class="quadro">
         <ul class="trilho">
           <li>
             <figure>
-              <img data-zoom src="assets/projetos/pipol-site.jpg" alt="Busca pública de vagas do portal." data-i18n-alt="cap.pipol.1" loading="lazy" decoding="async">
+              <img data-zoom src="assets/projetos/pipol-site.jpg" width="1000" height="672" alt="Busca pública de vagas do portal." data-i18n-alt="cap.pipol.1" loading="lazy" decoding="async">
               <figcaption data-i18n="cap.pipol.1">Busca pública de vagas do portal.</figcaption>
             </figure>
           </li>
@@ -241,31 +295,31 @@
           <h3 data-i18n="proj.fortuna.titulo">proj.fortuna.titulo</h3>
           <p class="desc" data-i18n="proj.fortuna.desc">proj.fortuna.desc</p>
           <p class="meta">Next.js · TypeScript · Django · WebSockets · PostgreSQL</p>
-          <p class="links"><a href="https://fortuna-beige.vercel.app" data-i18n="proj.link.site">Ver funcionando</a> · <a href="https://github.com/nathanhgo/fortuna" data-i18n="proj.link.codigo">Código no GitHub</a></p>
+          <p class="links"><a href="https://fortuna-beige.vercel.app" rel="noopener" data-i18n="proj.link.site">Ver funcionando</a> · <a href="https://github.com/nathanhgo/fortuna" rel="noopener" data-i18n="proj.link.codigo">Código no GitHub</a></p>
       <div class="carrossel">
         <div class="quadro">
         <ul class="trilho">
           <li>
             <figure>
-              <img data-zoom src="assets/projetos/fortuna-site.jpg" alt="Entrada e criação de sala: sem cadastro, só o link." data-i18n-alt="cap.fortuna.1" loading="lazy" decoding="async">
+              <img data-zoom src="assets/projetos/fortuna-site.jpg" width="1000" height="672" alt="Entrada e criação de sala: sem cadastro, só o link." data-i18n-alt="cap.fortuna.1" loading="lazy" decoding="async">
               <figcaption data-i18n="cap.fortuna.1">Entrada e criação de sala: sem cadastro, só o link.</figcaption>
             </figure>
           </li>
           <li>
             <figure>
-              <img data-zoom src="assets/projetos/fortuna-xadrez.jpg" alt="Xadrez." data-i18n-alt="cap.fortuna.2" loading="lazy" decoding="async">
+              <img data-zoom src="assets/projetos/fortuna-xadrez.jpg" width="700" height="525" alt="Xadrez." data-i18n-alt="cap.fortuna.2" loading="lazy" decoding="async">
               <figcaption data-i18n="cap.fortuna.2">Xadrez.</figcaption>
             </figure>
           </li>
           <li>
             <figure>
-              <img data-zoom src="assets/projetos/fortuna-coup.jpg" alt="Coup." data-i18n-alt="cap.fortuna.3" loading="lazy" decoding="async">
+              <img data-zoom src="assets/projetos/fortuna-coup.jpg" width="700" height="525" alt="Coup." data-i18n-alt="cap.fortuna.3" loading="lazy" decoding="async">
               <figcaption data-i18n="cap.fortuna.3">Coup.</figcaption>
             </figure>
           </li>
           <li>
             <figure>
-              <img data-zoom src="assets/projetos/fortuna-batalha-naval.jpg" alt="Batalha naval." data-i18n-alt="cap.fortuna.4" loading="lazy" decoding="async">
+              <img data-zoom src="assets/projetos/fortuna-batalha-naval.jpg" width="700" height="525" alt="Batalha naval." data-i18n-alt="cap.fortuna.4" loading="lazy" decoding="async">
               <figcaption data-i18n="cap.fortuna.4">Batalha naval.</figcaption>
             </figure>
           </li>
@@ -277,13 +331,13 @@
           <h3 data-i18n="proj.ficha.titulo">proj.ficha.titulo</h3>
           <p class="desc" data-i18n="proj.ficha.desc">proj.ficha.desc</p>
           <p class="meta">Flutter · Dart · PostgreSQL · Supabase</p>
-          <p class="links"><a href="https://ficha-digital-rpg.vercel.app" data-i18n="proj.link.site">Ver funcionando</a> · <a href="https://github.com/nathanhgo/ficha-digital-rpg" data-i18n="proj.link.codigo">Código no GitHub</a></p>
+          <p class="links"><a href="https://ficha-digital-rpg.vercel.app" rel="noopener" data-i18n="proj.link.site">Ver funcionando</a> · <a href="https://github.com/nathanhgo/ficha-digital-rpg" rel="noopener" data-i18n="proj.link.codigo">Código no GitHub</a></p>
       <div class="carrossel">
         <div class="quadro">
         <ul class="trilho">
           <li>
             <figure>
-              <img data-zoom src="assets/projetos/ficha-site.jpg" alt="Tela de entrada, na versão web do app." data-i18n-alt="cap.ficha.1" loading="lazy" decoding="async">
+              <img data-zoom src="assets/projetos/ficha-site.jpg" width="1000" height="691" alt="Tela de entrada, na versão web do app." data-i18n-alt="cap.ficha.1" loading="lazy" decoding="async">
               <figcaption data-i18n="cap.ficha.1">Tela de entrada, na versão web do app.</figcaption>
             </figure>
           </li>
@@ -295,19 +349,19 @@
           <h3 data-i18n="proj.sippat.titulo">SIPPAT: sistema do Posto de Atendimento ao Trabalhador</h3>
           <p class="desc" data-i18n="proj.sippat.desc">Sistema de gestão do atendimento do PAT de Jacareí, feito em parceria com a Prefeitura. Controla cidadãos, perfil profissional, indicadores socioeconômicos e histórico de atendimentos, com importação de planilhas, criptografia, trilha de auditoria e anonimização de registros inativos para atender à LGPD.</p>
           <p class="meta">NestJS · Angular · PostgreSQL · Prisma · LGPD</p>
-          <p class="links"><a href="https://github.com/nathanhgo/sippat" data-i18n="proj.link.codigo">Código no GitHub</a></p>
+          <p class="links"><a href="https://github.com/nathanhgo/sippat" rel="noopener" data-i18n="proj.link.codigo">Código no GitHub</a></p>
         </li>
         <li data-anima>
           <h3 data-i18n="proj.bench.titulo">proj.bench.titulo</h3>
           <p class="desc" data-i18n="proj.bench.desc">proj.bench.desc</p>
           <p class="meta">Go · Python · OpenCV · medição de tempo e memória</p>
-          <p class="links"><a href="https://github.com/nathanhgo/image-processing-benchmark" data-i18n="proj.link.codigo">Código no GitHub</a></p>
+          <p class="links"><a href="https://github.com/nathanhgo/image-processing-benchmark" rel="noopener" data-i18n="proj.link.codigo">Código no GitHub</a></p>
       <div class="carrossel">
         <div class="quadro">
         <ul class="trilho">
           <li>
             <figure>
-              <img data-zoom src="assets/projetos/benchmark-tempo.png" alt="Tempo e memória de cada arquitetura, medidos no repositório." data-i18n-alt="cap.bench.1" loading="lazy" decoding="async">
+              <img data-zoom src="assets/projetos/benchmark-tempo.png" width="1350" height="540" alt="Tempo e memória de cada arquitetura, medidos no repositório." data-i18n-alt="cap.bench.1" loading="lazy" decoding="async">
               <figcaption data-i18n="cap.bench.1">Tempo e memória de cada arquitetura, medidos no repositório.</figcaption>
             </figure>
           </li>
@@ -319,23 +373,10 @@
           <h3 data-i18n="proj.sem.titulo">proj.sem.titulo</h3>
           <p class="desc" data-i18n="proj.sem.desc">proj.sem.desc</p>
           <p class="meta">Python · NLP · embeddings · casamento semântico</p>
-          <p class="links"><a href="https://github.com/nathanhgo/semantic-skill-matcher" data-i18n="proj.link.codigo">Código no GitHub</a></p>
+          <p class="links"><a href="https://github.com/nathanhgo/semantic-skill-matcher" rel="noopener" data-i18n="proj.link.codigo">Código no GitHub</a></p>
         </li>
         </ul>
-        <p class="label" style="margin-top:1.5rem"><span data-i18n="proj.outros">outros repositórios em</span> <a href="https://github.com/nathanhgo">github.com/nathanhgo</a></p>
-      </div>
-    </section>
-
-    <section class="section" id="paginas">
-      <div class="wrap">
-        <span class="num" data-i18n="paginas.num">03 · páginas para negócios</span>
-        <h2 data-anima data-i18n="paginas.titulo">Uma página que trabalha pela loja</h2>
-        <p data-anima data-i18n="paginas.p1">Faço páginas de uma tela para comércios e lojas, com o que resolve o dia a dia de quem atende balcão: o negócio aparece para quem procura, preços e horário ficam escritos sem ninguém precisar perguntar e o contato cai direto no WhatsApp com a mensagem já escrita. Também faço automação de tarefas repetitivas e organização de catálogo.</p>
-        <p data-anima data-i18n="paginas.p2">Algumas páginas de demonstração estão sendo publicadas para mostrar o resultado antes de qualquer contratação. Nenhuma delas é o site oficial de um negócio, e todas saem do ar se o dono pedir.</p>
-        <div class="acoes" data-anima>
-          <a class="btn" href="#orcamento" data-i18n="paginas.cta1">Quero uma página assim</a>
-          <a class="btn btn--ghost" href="#contato" data-i18n="paginas.cta2">Ver contato</a>
-        </div>
+        <p class="label" style="margin-top:1.5rem"><span data-i18n="proj.outros">outros repositórios em</span> <a href="https://github.com/nathanhgo" rel="noopener">github.com/nathanhgo</a></p>
       </div>
     </section>
 
@@ -347,23 +388,15 @@
           <li>Go</li>
           <li>Python</li>
           <li>TypeScript</li>
-          <li>JavaScript</li>
           <li>React</li>
           <li>Next.js</li>
           <li>Flutter</li>
-          <li>Dart</li>
           <li>Node.js</li>
           <li>Django</li>
-          <li>REST</li>
           <li>PostgreSQL</li>
-          <li>MySQL</li>
-          <li>SQLite</li>
           <li>Git</li>
           <li>Linux</li>
           <li>Docker</li>
-          <li>OpenCV</li>
-          <li>Pandas</li>
-          <li>Vitest</li>
         </ul>
       </div>
     </section>
@@ -375,7 +408,9 @@
         <table class="simples">
           <tr><th data-i18n="faq.q1">Você faz páginas para comércios e lojas?</th><td data-i18n="faq.a1">Faço. Páginas de uma tela que aparecem na busca com horário, endereço e serviços, e levam o contato direto para o WhatsApp com a mensagem já escrita.</td></tr>
           <tr><th data-i18n="faq.q2">Atende só Jacareí?</th><td data-i18n="faq.a2">Moro em Jacareí e atendo a região presencialmente. Para o resto do país o trabalho é remoto, e a página fica pronta em poucos dias.</td></tr>
-          <tr><th data-i18n="faq.q3">Está disponível para trabalhar agora?</th><td data-i18n="faq.a3">Estou disponível para projetos freelancer e para conversas sobre oportunidades de desenvolvimento.</td></tr>
+          <tr><th data-i18n="faq.q3">Quanto tempo leva para a página ficar pronta?</th><td data-i18n="faq.a3">Poucos dias depois de eu receber as informações do negócio. O andamento você acompanha pelo WhatsApp.</td></tr>
+          <tr><th data-i18n="faq.q4">Já tenho Instagram. Preciso de uma página?</th><td data-i18n="faq.a4">Ajuda bastante. O Instagram fala com quem já te segue; a página aparece para quem procura no Google e leva essa pessoa direto para o seu WhatsApp.</td></tr>
+          <tr><th data-i18n="faq.q5">Está disponível para trabalhar agora?</th><td data-i18n="faq.a5">Estou disponível para novos projetos e respondo pelo WhatsApp.</td></tr>
         </table>
       </div>
     </section>
@@ -385,14 +420,18 @@
         <span class="num" data-i18n="cont.num">06 · contato</span>
         <h2 data-anima data-i18n="cont.titulo">Vamos falar do seu projeto</h2>
         <p data-anima data-i18n="cont.p1">Me conta o que você precisa e eu respondo com o que dá para fazer, o prazo e o valor. Sem compromisso.</p>
-        <p data-anima data-i18n="cont.p2">Também estou no LinkedIn, que é onde costumo acompanhar oportunidades.</p>
+        <p data-anima data-i18n="cont.p2">O caminho mais rápido é o WhatsApp. Também estou no LinkedIn e no GitHub.</p>
+        <div class="acoes" data-anima>
+          <a class="btn" href="https://wa.me/5512997640390?text=Ol%C3%A1%2C%20Nathan!%20Vim%20pelo%20seu%20site%20e%20quero%20uma%20p%C3%A1gina%20para%20o%20meu%20neg%C3%B3cio." rel="noopener" data-i18n="cont.cta.whats">Falar no WhatsApp</a>
+        </div>
         <ul class="links-lista" data-anima>
+          <li><span class="rot" data-i18n="cont.rot.whats">whatsapp</span><a href="https://wa.me/5512997640390" rel="noopener">(12) 99764-0390</a></li>
           <li><span class="rot" data-i18n="cont.rot.email">e-mail</span>
             <span class="linha-email"><a href="mailto:nathanhguimaraes@gmail.com">nathanhguimaraes@gmail.com</a>
             <button class="copiar" type="button" data-copiar="nathanhguimaraes@gmail.com" data-i18n="copiar">copiar</button>
             <span class="copiar-aviso" role="status" aria-live="polite"></span></span></li>
-          <li><span class="rot" data-i18n="cont.rot.github">github</span><a href="https://github.com/nathanhgo">github.com/nathanhgo</a></li>
-          <li><span class="rot" data-i18n="cont.rot.linkedin">linkedin</span><a href="https://linkedin.com/in/nathanguimaraes">linkedin.com/in/nathanguimaraes</a></li>
+          <li><span class="rot" data-i18n="cont.rot.github">github</span><a href="https://github.com/nathanhgo" rel="noopener">github.com/nathanhgo</a></li>
+          <li><span class="rot" data-i18n="cont.rot.linkedin">linkedin</span><a href="https://linkedin.com/in/nathanguimaraes" rel="noopener">linkedin.com/in/nathanguimaraes</a></li>
         </ul>
       </div>
     </section>
@@ -401,17 +440,20 @@
       <div class="wrap">
         <span class="num" data-i18n="form.rotulo">07 · orçamento</span>
         <h2 data-anima data-i18n="form.titulo">Peça um orçamento em três campos</h2>
-        <p data-i18n="form.p">Preencha os três campos e o seu programa de e-mail abre com a mensagem pronta. Se preferir, use o WhatsApp ou o e-mail direto abaixo.</p>
+        <p data-i18n="form.p">O jeito mais rápido é o WhatsApp: você manda a mensagem e eu respondo com prazo e valor. Se preferir e-mail, preencha os três campos abaixo.</p>
+        <div class="acoes" data-anima>
+          <a class="btn" href="https://wa.me/5512997640390?text=Ol%C3%A1%2C%20Nathan!%20Vim%20pelo%20seu%20site%20e%20quero%20uma%20p%C3%A1gina%20para%20o%20meu%20neg%C3%B3cio." rel="noopener" data-i18n="cont.cta.whats">Falar no WhatsApp</a>
+        </div>
         <form class="form-contato" data-form action="mailto:nathanhguimaraes@gmail.com" method="post" enctype="text/plain">
           <label><span data-i18n="form.nome">seu nome</span><input name="nome" type="text" required></label>
           <label><span data-i18n="form.contato">seu e-mail ou WhatsApp</span><input name="contato" type="text"></label>
           <label><span data-i18n="form.mensagem">o que você precisa</span><textarea name="mensagem" required></textarea></label>
-          <button class="btn" type="submit" data-i18n="form.enviar">Preparar e-mail</button>
+          <button class="btn btn--ghost" type="submit" data-i18n="form.enviar">Preparar e-mail</button>
           <p class="aviso" role="status" aria-live="polite"></p>
         </form>
         <div class="acoes">
-          <a class="btn btn--ghost" href="https://linkedin.com/in/nathanguimaraes" data-i18n="cont.rot.linkedin">linkedin</a>
-          <a class="btn btn--ghost" href="https://github.com/nathanhgo" data-i18n="cont.rot.github">github</a>
+          <a class="btn btn--ghost" href="https://wa.me/5512997640390?text=Ol%C3%A1%2C%20Nathan!%20Vim%20pelo%20seu%20site%20e%20quero%20uma%20p%C3%A1gina%20para%20o%20meu%20neg%C3%B3cio." rel="noopener" data-i18n="cont.rot.whats">whatsapp</a>
+          <a class="btn btn--ghost" href="https://github.com/nathanhgo" rel="noopener" rel="noopener" data-i18n="cont.rot.github">github</a>
         </div>
       </div>
     </section>

@@ -186,7 +186,7 @@ document.documentElement.classList.add('js');
     if (!nome || !mensagem) return;              /* sem JS o action=mailto assume o envio */
     e.preventDefault();
     var assunto = (idioma === 'en' ? 'Message from the website: ' : 'Contato pelo site: ') + nome;
-    var corpo = mensagem + '\n\n— ' + nome + (contato ? ' (' + contato + ')' : '');
+    var corpo = mensagem + '\n\n' + nome + (contato ? ' (' + contato + ')' : '');
     window.location.href = 'mailto:nathanhguimaraes@gmail.com'
       + '?subject=' + encodeURIComponent(assunto)
       + '&body=' + encodeURIComponent(corpo);
