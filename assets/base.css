@@ -1,6 +1,13 @@
 /* Portfólio de Nathan Guimarães — tokens, tema claro/escuro e componentes.
    Nenhuma cor, fonte ou espaçamento solto no HTML (ver architecture_docs/visual.md). */
 
+/* Fontes servidas do próprio site: nenhuma requisição para o Google, nada de terceiro
+   medindo quem visita e uma conexão a menos antes do primeiro texto aparecer. */
+@font-face { font-family: "Fraunces"; src: url("fontes/fraunces-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; src: url("fontes/source-sans-3-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; src: url("fontes/source-sans-3-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("fontes/jetbrains-mono-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+
 :root {
   /* o verde é a cor da casa: aparece em número de seção, link, badge, borda de foco e faixa final */
   --paper: #f3f6f2;
